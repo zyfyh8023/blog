@@ -48,11 +48,13 @@ BEM（Block Element Modifier），BEM定义的css class命名规范，每个名�
    <a class="page-component__item__btn">6</a>
 </li>
 ```
-
+子选择器：
 
 ```css
 <style>
-
+.a{
+  font-sze: 20px;
+}
 </style>
 ```
 ## 为什么推崇BEM
