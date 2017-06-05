@@ -3,23 +3,43 @@
 ## 什么是BEM
 BEM是由Yandex团队提出的一种CSS类的命名方法规范。BEM所约定的CSS类命名规范较严格，这种命名方法不仅在一定程度上可以解决CSS样式污染的问题，而且有助于帮助开发者实现模块化，高维护性和结构化的css代码。
 
-BEM（Block Element Modifier），BEM定义的css class命名规范，每个名称由块（Block）、元素（Element）和修饰符（Modifier）这三个模块组合而成，当然并非一定全部包含这三个模块。每个类名称的每个组成部分都有着不同的意义。块、元素和修饰符的名称都由拉丁字母、数字和\-（中划线）组成。
+BEM（Block Element Modifier），BEM定义的css class命名规范，每个名称由块（Block）、元素（Element）和修饰符（Modifier）这三个模块组合而成，当然并非一定全部包含这三个模块。每个类名称的每个组成部分都有着不同的意义。一般情况，块、元素和修饰符的名称都由拉丁字母、数字和\-（中划线）组成。
 * 块（Block），块即Web开发中我们常说的组件或模块，作为CSS类名称的命名空间。块在逻辑和功能上都是相互独立的，每个块中封装了模块相关的JavaScript、CSS和HTML模板，是一个独立的实体。由于块是相互独立的，所以块可以在开发被多次复用，从而降低代码的重复和提高项目的开发效率。块可以被放置在页面的任意位置，块之间也可以任意嵌套，同一页面中可以包含任意多的块，甚至是相同块的不同实例。
 * 元素（Element），元素是相对于块来说的，是块的组成部分，元素的CSS类名都会包含块的名称作为前缀，块内部的元素是兄弟的关系，BEM不推荐元素之间的嵌套使用。元素和块之间通过\_\_（两个下划线）连接。
 * 修饰符（Modifier），修饰符是用来修饰块或元素的外观、行为和状态的。同样的块或元素在不同的应用场景下经过不同的修饰符之后，会有不同的表现。修饰符
   和块或元素之间通过\-\-（两个中划线）连接。
 
-## BEM的几个例子
-通过上面的介绍，我们了解了BEM的命名规范，下面通过几个小例子来看看BEM到底是如何使用的：
+## BEM的一个小例子
+通过上面的介绍，我们了解了BEM的命名规范，下面通过下面的这个小例子来看看BEM到底是如何使用的：
 * 例一：
 ```html
   <div class="page-component">
       <ul class="page-component__list">
-        <li class="page-component-item">
-            <a class="page-component-btn">上一页</a>
+        <li class="page-component__item">
+           <a class="page-component__pre-btn">上一页</a>
+        </li>
+        <li class="page-component__item">
+           <a class="page-component__btn">4</a>
+        </li>
+        <li class="page-component__item">
+           <a class="page-component__btn">5</a>
+        </li>
+        <li class="page-component__item">
+           <a class="page-component__btn">6</a>
+        </li>
+        <li class="page-component__item">
+            <a class="page-component__next-btn page-component__btn--disabled">下一页</a>
         </li>
       </ul>
   </div>
+```
+其中，page-component代表分页模块；page-component__list、page-component__item、page-component__pre-btn、page-component__btn和page-component__next-btn为page-component模块的子孙元素，用于形成一个完整的page-component模块；page-component__btn--disabled代表元素page-component__btn的不可用状态。之所以使用/_/_连接块和元素，使用/-/-连接元素和修饰符，是为了能够让我们使用-和_命名块、元素和修饰符的名称。当然，具体使用什么符号连接块、元素和修饰符，可以根据自己的需求情况而定，无论使用什么样的符号连接，它们其实都是基于同样的BEM原则。
+另外，
+
+```css
+<style>
+
+</style>
 ```
 ## 为什么推崇BEM
 * BEM的核心思想
