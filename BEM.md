@@ -34,7 +34,21 @@ BEM（Block Element Modifier），BEM定义的css class命名规范，每个名�
   </div>
 ```
 其中，page-component代表分页模块；page-component__list、page-component__item、page-component__pre-btn、page-component__btn和page-component__next-btn为page-component模块的子孙元素，用于形成一个完整的page-component模块；page-component__btn--disabled代表元素page-component__btn的不可用状态。之所以使用/_/_连接块和元素，使用/-/-连接元素和修饰符，是为了能够让我们使用-和_命名块、元素和修饰符的名称。当然，具体使用什么符号连接块、元素和修饰符，可以根据自己的需求情况而定，无论使用什么样的符号连接，它们其实都是基于同样的BEM原则。
-另外，
+
+另外，由上面的例子可知，page-component模块内部有多个元素，而且这些元素之间还存在父子关系，如：page-component__item元素和page-component__btn，这里很容易被误写为下面的样子，BEM命名规范规定css class名称的一般组成为block，block--modifier，block--modifier__element，block--modifier__element--modifier，block__element，block__element--modifier。BEM不允许page-component__item元素和page-component__item__btn元素之间的这种嵌套命名方式。
+```html
+<li class="page-component__item">
+   <a class="page-component__item__btn">6</a>
+</li>
+```
+
+当然，BEM也不允许块中的元素或元素内部的子元素不采用BEM的命名方式，如下所示：
+```html
+<li class="page-component__item">
+   <a class="page-component__item__btn">6</a>
+</li>
+```
+
 
 ```css
 <style>
@@ -44,6 +58,9 @@ BEM（Block Element Modifier），BEM定义的css class命名规范，每个名�
 ## 为什么推崇BEM
 * BEM的核心思想
 * BEM所要解决的问题
+
+更加容易地维护代码。
+让你的前端代码更容易阅读和理解，更容易协作，更容易控制，更加健壮和明确而且更加严密。
 
 ## BEM的优点
 
