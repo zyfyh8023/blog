@@ -1,4 +1,4 @@
-# BEM
+# BEM的简要介绍
 
 ## 什么是BEM
 BEM是由Yandex团队提出的一种CSS类的命名方法规范。BEM所约定的CSS类命名规范较严格，这种命名方法不仅在一定程度上可以解决CSS样式污染的问题，而且有助于帮助开发者实现模块化，高维护性和结构化的css代码。
@@ -8,9 +8,19 @@ BEM（Block Element Modifier），BEM定义的css class命名规范，每个名�
 * 元素（Element），元素是相对于块来说的，是块的组成部分，元素的CSS类名都会包含块的名称作为前缀，块内部的元素是兄弟的关系，BEM不推荐元素之间的嵌套使用。元素和块之间通过\_\_（两个下划线）连接。
 * 修饰符（Modifier），修饰符是用来修饰块或元素的外观、行为和状态的。同样的块或元素在不同的应用场景下经过不同的修饰符之后，会有不同的表现。修饰符
   和块或元素之间通过\-\-（两个中划线）连接。
-  
-## BEM的几个例子
 
+## BEM的几个例子
+通过上面的介绍，我们了解了BEM的命名规范，下面通过几个小例子来看看BEM到底是如何使用的：
+* 例一：
+```html
+  <div class="page-component">
+      <ul class="page-component__list">
+        <li class="page-component-item">
+            <a class="page-component-btn">上一页</a>
+        </li>
+      </ul>
+  </div>
+```
 ## 为什么推崇BEM
 * BEM的核心思想
 * BEM所要解决的问题
