@@ -11,7 +11,7 @@ BEM（Block Element Modifier），BEM定义的css class命名规范，每个名�
 
 ## BEM的一个小例子
 通过上面的介绍，我们了解了BEM的命名规范，下面通过下面的这个小例子来看看BEM到底是如何使用的：
-* 例一：
+* 例：
 ```html
 <div class="dialog-component">
     <div class="dialog-component__header">
@@ -35,24 +35,24 @@ BEM（Block Element Modifier），BEM定义的css class命名规范，每个名�
 
 另外，由上面的例子可知，dialog-component模块内部有多个元素，而且这些元素之间还存在父子关系，如：dialog-component__body元素和dialog-component__ipt，这里很容易被误写为下面的样子，BEM命名规范规定css class名称的一般组成为block，block--modifier，block--modifier__element，block--modifier__element--modifier，block__element，block__element--modifier。BEM不允许dialog-component__body元素和dialog-component__body__ipt元素之间的这种嵌套命名方式。可以另起一个元素的名字如dialog-component__body和dialog-component__ipt，也可以dialog-component__body和dialog-component__ipt-body等多种方式。
 ```html
-...
+<!-- ... -->
 <div class="dialog-component__body">
      <div class="dialog-component__body__ipt">
          <input type="text" class="dialog-component__id-ipt"/>
          <input type="password" class="dialog-component__pwd-ipt"/>
      </div>
- ...
+ <!-- ... -->
  </div>
-...
+<!-- ... -->
 ```
 当然，BEM也不允许块中的元素或元素内部的子元素不采用BEM的命名方式（如下所示）,我们不仅要在开发组件模块的时候使用BEM，在页面的开发中也要使用BEM，不然乱起的一个名字很可能就和某一组件冲突了，导致样式相互覆盖。只有都按照BEM的规范来开发，这样才能够达到更好的效果。
 ```html
-...
+<!-- ... -->
 <div class="dialog-component__ipt">
     <input type="text" class="id-ipt"/>
     <input type="password" class="pwd-ipt"/>
 </div>
-...
+<!-- ... -->
 ```
 像上面的这种写法（在内部元素不使用BEM的命名规范），很容易在我们写对应样式的时候（如下所示），和页面其他模块的样式之间引起冲突污染。比如，其他的一个模块叫id-ipt,或者其他组件模块内部也有一个id-ipt。避免使用级联选择器(如下所示)，HTML元素同样也不要用作CSS选择器（如.dialog-component__ipt input)，因为这样的选择器并非是完全上下文无关的。另外，块内部也最好不要使用ID选择器，因为块的独立性，可以在同一页面出现任意多次。
 
