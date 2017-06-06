@@ -14,7 +14,7 @@ CSS没有局部作用域的概念，所有的样式规则都是全局作用域�
 * 通过CSS in JSDE方式，主要包括polished.js等。
   * polished，polished具体使用介绍和优缺点分析详见：[polished](http://www.baidu.com)
 * 通过style的局部作用域的方式，如scoped。
-  * scoped，scoped具体使用介绍和优缺点分析详见：[scoped](http://www.baidu.com)
+  * scoped，scoped具体使用介绍和优缺点分析详见：[scoped](https://github.com/zyfyh8023/blog/blob/master/Scoped.md)
 
 
 ## 个人改进方案：
