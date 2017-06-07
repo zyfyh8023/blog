@@ -34,9 +34,12 @@ scoped属性是HTML5中的新增属性，它允许我们通过style标签的方�
 </div>
 ```
 以上代码的效果如下所示：
- ![image](https://github.com/zyfyh8023/blog/blob/raw/master/imgs/result.png)
+ ![result](https://github.com/zyfyh8023/blog/raw/master/imgs/result.png)
+
 
 scoped属性的兼容性如下所示：
+![result](https://github.com/zyfyh8023/blog/raw/master/imgs/brower.png)
+
 
 由于scoped属性尚未被浏览器广泛支持，所以可以使用脚本的方式：jquery.scoped.js https://github.com/thingsinjars/jQuery-Scoped-CSS-plugin
 这种方式可以使用一个方法$.scoped()检索页面中的<style scoped>标签，把其中的css代码限定在父标签范围内。
