@@ -38,7 +38,7 @@ scoped属性是HTML5中的新增属性，它允许我们通过style标签的方�
 
 
 scoped属性的兼容性如下所示：
-![result](https://github.com/zyfyh8023/blog/raw/master/imgs/brower.png)
+![brower](https://github.com/zyfyh8023/blog/raw/master/imgs/brower.png)
 
 
 由于scoped属性尚未被浏览器广泛支持，所以可以使用脚本的方式：jquery.scoped.js https://github.com/thingsinjars/jQuery-Scoped-CSS-plugin
