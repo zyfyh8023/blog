@@ -34,7 +34,7 @@ scoped属性是HTML5中的新增属性，它允许我们通过style标签的方�
 </div>
 ```
 以上代码的效果如下所示：
- ![result](https://github.com/zyfyh8023/blog/raw/master/imgs/result.png)
+![result](https://github.com/zyfyh8023/blog/raw/master/imgs/result.png)
 
 
 scoped属性的兼容性如下所示：
