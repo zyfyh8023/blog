@@ -5,7 +5,7 @@ CSS没有局部作用域的概念，所有的样式规则都是全局作用域�
 * 通过对CSS类名进行规范约定的方式，主要包括：BEM、OOCSS和SMACSS等。
   * BEM（Block Element Modifier）,BEM具体使用介绍和优缺点分析详见：[BEM](https://github.com/zyfyh8023/blog/blob/master/articles/BEM.md)
   * OOCSS（Object Oriented CSS）,OOCSS的具体使用介绍和优缺点分析详见：[OOCSS](https://github.com/zyfyh8023/blog/blob/master/articles/OOCSS.md)
-  * SMACSS（Scalable and Modular Architecture for CSS），BEM具体使用介绍和优缺点分析详见：[SMACSS](http://www.baidu.com)
+  * SMACSS（Scalable and Modular Architecture for CSS），BEM具体使用介绍和优缺点分析详见：[SMACSS](https://github.com/zyfyh8023/blog/blob/master/articles/SMACSS.md)
 * 通过对CSS类名进行编译的方式，主要包括CSS Modules和PostCSS等。
   * CSS Modules，CSS Modules具体使用介绍和优缺点分析详见：[CSS Modules](http://www.baidu.com)
   * PostCSS，PostCSS具体使用介绍和优缺点分析详见：[PostCSS](http://www.baidu.com)
