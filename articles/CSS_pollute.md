@@ -8,7 +8,7 @@ CSS没有局部作用域的概念，所有的样式规则都是全局作用域�
   * ITCSS（ITCSS），ITCSS的具体使用介绍和优缺点分析详见：[ITCSS](https://github.com/zyfyh8023/blog/blob/master/articles/ITCSS.md)
   * SMACSS（Scalable and Modular Architecture for CSS），SMACSS具体使用介绍和优缺点分析详见：[SMACSS](https://github.com/zyfyh8023/blog/blob/master/articles/SMACSS.md)
 * 通过对CSS类名进行编译的方式，主要包括CSS Modules和PostCSS等。
-  * CSS Modules，CSS Modules的具体使用介绍和优缺点分析详见：[CSS Modules](http://www.baidu.com)
+  * CSS Modules，CSS Modules的具体使用介绍和优缺点分析详见：[CSS Modules](https://github.com/zyfyh8023/blog/blob/master/articles/CSSModules.md)
   * PostCSS，PostCSS的具体使用介绍和优缺点分析详见：[PostCSS](http://www.baidu.com)
 * 通过对CSS代码原子拆分的方式，如ACSS。
   * ACSS，ACSS的具体使用介绍和优缺点分析详见：[ACSS](https://github.com/zyfyh8023/blog/blob/master/articles/ACSS.md)
