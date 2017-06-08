@@ -9,7 +9,7 @@ CSS没有局部作用域的概念，所有的样式规则都是全局作用域�
   * SMACSS（Scalable and Modular Architecture for CSS），SMACSS具体使用介绍和优缺点分析详见：[SMACSS](https://github.com/zyfyh8023/blog/blob/master/articles/SMACSS.md)
 * 通过对CSS类名进行编译的方式，主要包括CSS Modules和PostCSS等。
   * CSS Modules，CSS Modules的具体使用介绍和优缺点分析详见：[CSS Modules](https://github.com/zyfyh8023/blog/blob/master/articles/CSSModules.md)
-  * PostCSS，PostCSS的具体使用介绍和优缺点分析详见：[PostCSS](http://www.baidu.com)
+  * PostCSS，PostCSS的具体使用介绍和优缺点分析详见：[PostCSS](https://github.com/zyfyh8023/blog/blob/master/articles/PostCSS.md)
 * 通过对CSS代码原子拆分的方式，如ACSS。
   * ACSS，ACSS的具体使用介绍和优缺点分析详见：[ACSS](https://github.com/zyfyh8023/blog/blob/master/articles/ACSS.md)
 * 通过CSS in JS的方式，CSS in JS的库有很多，主要包括polished.js等。
