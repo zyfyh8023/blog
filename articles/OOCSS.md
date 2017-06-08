@@ -1,4 +1,4 @@
-# OOCSS简要介绍
+# OOCSS的简要介绍
 
 
 ## 什么是OOCSS？
