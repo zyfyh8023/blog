@@ -12,7 +12,7 @@ CSS没有局部作用域的概念，所有的样式规则都是全局作用域�
 * 通过对CSS代码原子拆分的方式，如ACSS。
   * ACSS，ACSS的具体使用介绍和优缺点分析详见：[ACSS](https://github.com/zyfyh8023/blog/blob/master/articles/ACSS.md)
 * 通过CSS in JS的方式，CSS in JS的库有很多，主要包括polished.js等。
-  * polished，polished的具体使用介绍和优缺点分析详见：[polished](https://github.com/zyfyh8023/blog/blob/master/articles/polished.md)
+  * CSS in JS，CSS in JS的具体使用介绍和优缺点分析详见：[CSS in JS](https://github.com/zyfyh8023/blog/blob/master/articles/polished.md)
 * 通过style的局部作用域的方式，如scoped。
   * scoped，scoped的具体使用介绍和优缺点分析详见：[scoped](https://github.com/zyfyh8023/blog/blob/master/articles/Scoped.md)
 
