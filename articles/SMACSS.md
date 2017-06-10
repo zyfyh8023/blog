@@ -9,9 +9,50 @@ CSS代码分类是SAMCSS最核心的部分，它提出了一种CSS的分类方�
 * 布局（Layout），布局一般指一个网站的结构布局和外观走向，是用来组织分布排列模块元件的大容器，而非某一个小元件或者功能模块。常见的网站的布局，如上（header）中（main）下（footer）布局，其中中间部分又分为左分栏（left Column）右分栏（Right Column）布局等，以及栅格系统（Grid System），响应式布局（Responsive Web Design）等都属于布局。该类别中只包含这些与页面布局相关的CSS样式代码。
 * 模块（Module），就是用于放置在布局（layout）中的一个个功能独立的可被复用的模块，具体来说一个网站的菜单、产品列表、分页组件等都是一个个的模块。该类别中只包含这些公共、独立、可复用的模块的CSS样式代码。
 * 状态（State），该类别只包含对布局、模块和任何元素不同表现行为或状态修饰的样式代码。比如，在不同的屏幕尺寸下，布局的不同外观；消息提示框模块在成功和失败不同状态下的外观；以及元素的点击和非点击状态或显示与隐藏等。另外，状态样式一般和JavaScript代码一起结合使用的居多。
-* 主题（Theme），主题规范描述了页面的主题外观，用来设置页面整体的视觉效果，可以说是一种皮肤。一般指border-color、background-image和font-family等。主题规范可以修改前面4个类别的样式，且应和前面4个类别分离开来，便于换肤。主题规范不要求使用单独的class命名，也就是说，主题规范里的css类都可以在上面4个类别中找到定义，这样做的好处就是后加载主题样式文件可以对前面4类的样式进行覆盖，进而切换皮肤。
+* 主题（Theme），主题规范描述了页面的主体外观，用来设置页面整体的视觉效果，可以说是一种皮肤。一般指border-color、background-image和font-family等。主题规范可以修改前面4个类别的样式，且应和前面4个类别分离开来，便于换肤。主题规范不要求使用单独的class命名，也就是说，主题规范里的css类基本都可以在上面4个类别中找到定义，这样做的好处就是后加载主题样式文件可以对前面4类的样式进行覆盖，进而切换皮肤。
 
 ## CSS类的命名规范：
+按照前面5种的划分:
+* 基础（Base），基础规范样式，一般就是css reset之类样式文件，直接引入即可。文件内容如下所示：
+```css
+* {}
+input[type=text] {}
+a {}
+a:hover {}
+```
+
+* 布局（Layout）,用l-或layout-这样的前缀，如下所示：
+```css
+.l-header {}
+.l-navigator {}
+.l-container {}
+.l-sidebar {}
+.l-content {}
+.l-footer {}
+```
+
+* 模块（Module），用模块本身的命名，如下所示：
+```css
+.product-list {}
+.product-list-title {}
+.product-list-image {}
+.product-list-article {}
+```
+
+* 状态（State），用is-前缀，如下所示：
+```css
+.is-error {}
+.is-success{}
+.is-show{}
+.is-hidden{}
+.is-active{}
+```
+
+* 主题（Theme），主题规范一般不要求单独class，如果是单独的class用theme-前缀，如下所示：
+```css
+.theme-a-backgroun{}
+.theme-a-shadow{}
+```
 
 ## 最小化适配深度：
 
