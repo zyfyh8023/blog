@@ -1,7 +1,7 @@
 # SMACSS的简要介绍
 
 ## 什么是SMACSS？
-SMACSS（Scalable and Modular Architecture for CS），可扩展和模块化的CSS。用一句话概括，SMACSS就是一种组织和管理CSS代码的规范。SMACSS主要从CSS代码分类、CSS类的命名规范和最小化适配深度三个层面来规范CSS代码，最终使CSS代码结构化、模块化、可扩展和明确化。
+SMACSS（Scalable and Modular Architecture for CSS），可扩展和模块化的CSS。用一句话概括，SMACSS就是一种组织和管理CSS代码的规范。SMACSS主要从CSS代码分类、CSS类的命名规范和最小化适配深度三个层面来规范CSS代码，最终使CSS代码结构化、模块化、可扩展和明确化。
 
 ## CSS代码的分类：
 CSS代码分类是SAMCSS最核心的部分，它提出了一种CSS的分类方法，其横向的把CSS切分为基础（Base）、布局（Layout）、模块（Module）、状态（State）、主题（Theme）五种类型。
