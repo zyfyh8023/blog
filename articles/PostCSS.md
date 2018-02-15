@@ -23,7 +23,7 @@ PostCSS一般不单独使用，而是与已有的构建工具进行集成。Post
 })
 ```
   
-```
+```javascript
 //使用PostHTML处理HTML里支持CSS模块
 gulp.task('posthtml', function() {
 	var posthtml = require('gulp-posthtml');
@@ -34,7 +34,6 @@ gulp.task('posthtml', function() {
 ```
   
 如上代码所示，使用Gulp的gulp-posthtml来处理HTML文件的任务。posthtml-css-modules可以处理一个目录下的多个 CSS 模块输出文件。
-
 在HTML文件中使用“css-module”属性来指定对应的CSS类名。如下代码所示，名称“header.content”的header表示的是CSS文件名，而content是该文件中定义的CSS类名。
   
 ```html
