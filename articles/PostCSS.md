@@ -1,12 +1,8 @@
-# PostCSS的简要介绍是什么？
+# PostCSS
 
-## 什么是PostCSS？
+## PostCSS的简要介绍
 
-## PostCSS的核心思想和所要解决的问题是什么？
+## PostCSS的优缺点
 
-## PostCSS的优点是什么？
-
-## PostCSS的缺点是什么？
-
-## PostCSS和CSS样式污染的关系是什么？
+## PostCSS和CSS样式污染的关系总结
 
